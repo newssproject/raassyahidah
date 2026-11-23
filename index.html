@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RA Asy Syahidah</title>
+  <meta name="description" content="Raudhatul Athfal Asy Syahidah — taman kanak-kanak Islam tempat si kecil belajar, bermain, dan tumbuh ceria bersama Syabee.">
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Gochi+Hand&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="splash-open">
+
+  <!-- ====== Gambar & ikon lucu (dipakai ulang) ====== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="beeBody"><ellipse cx="62" cy="70" rx="40" ry="33"/></clipPath>
+    </defs>
+    <symbol id="bee" viewBox="0 0 125 112">
+      <path d="M72 40 q-4 -20 -16 -26" stroke="#3b2a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <circle cx="55" cy="13" r="6" fill="#3b2a1a"/><circle cx="53" cy="11" r="2" fill="#fff"/>
+      <path d="M86 42 q6 -20 20 -22" stroke="#3b2a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <circle cx="107" cy="20" r="6" fill="#3b2a1a"/><circle cx="105" cy="18" r="2" fill="#fff"/>
+      <g class="wing">
+        <ellipse cx="44" cy="34" rx="17" ry="24" transform="rotate(-28 44 34)" fill="#E2F4FF" stroke="#3b2a1a" stroke-width="3"/>
+        <ellipse cx="62" cy="30" rx="14" ry="20" transform="rotate(8 62 30)" fill="#F4FBFF" stroke="#3b2a1a" stroke-width="3"/>
+      </g>
+      <path d="M24 70 l-14 3 l14 7z" fill="#3b2a1a" stroke="#3b2a1a" stroke-width="2" stroke-linejoin="round"/>
+      <ellipse cx="62" cy="70" rx="40" ry="33" fill="#FFD93B"/>
+      <g clip-path="url(#beeBody)" fill="#3b2a1a">
+        <path d="M34 30 q-8 40 0 80 h11 q-8 -40 0 -80z"/>
+        <path d="M54 30 q-8 40 0 80 h11 q-8 -40 0 -80z"/>
+      </g>
+      <ellipse cx="62" cy="70" rx="40" ry="33" fill="none" stroke="#3b2a1a" stroke-width="3.5"/>
+      <circle cx="84" cy="64" r="9" fill="#fff" stroke="#3b2a1a" stroke-width="2.5"/>
+      <circle cx="86" cy="65" r="5.5" fill="#3b2a1a"/><circle cx="88" cy="62.5" r="2" fill="#fff"/>
+      <circle cx="102" cy="63" r="7" fill="#fff" stroke="#3b2a1a" stroke-width="2.5"/>
+      <circle cx="103" cy="64" r="4.2" fill="#3b2a1a"/><circle cx="104.5" cy="62" r="1.6" fill="#fff"/>
+      <ellipse cx="80" cy="79" rx="5" ry="3" fill="#FF8FAB" opacity=".85"/>
+      <ellipse cx="106" cy="77" rx="4" ry="2.6" fill="#FF8FAB" opacity=".85"/>
+      <path d="M88 79 q5 6 10 0" stroke="#3b2a1a" stroke-width="2.8" fill="#ff6f91" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="flower" viewBox="0 0 60 60">
+      <g stroke="#3b2a1a" stroke-width="2.5">
+        <circle cx="30" cy="13" r="11"/><circle cx="46" cy="25" r="11"/><circle cx="40" cy="44" r="11"/>
+        <circle cx="20" cy="44" r="11"/><circle cx="14" cy="25" r="11"/>
+      </g>
+      <circle cx="30" cy="30" r="9" fill="#FFD93B" stroke="#3b2a1a" stroke-width="2.5"/>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 120 60">
+      <path d="M25 55 a18 18 0 0 1 2 -36 a24 24 0 0 1 44 -6 a20 20 0 0 1 30 18 a13 13 0 0 1 -2 24z" fill="#fff" stroke="#3b2a1a" stroke-width="3"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 50 50">
+      <path d="M25 3 l6.5 14 15 2 -11 10.5 3 15 -13.5 -7.5 -13.5 7.5 3 -15 -11 -10.5 15 -2z" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 50 46">
+      <path d="M25 42 C5 28 2 17 6 10 c5 -8 15 -7 19 1 c4 -8 14 -9 19 -1 c4 7 1 18 -19 32z" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- ikon-ikon gambar tangan -->
+    <symbol id="i-book" viewBox="0 0 48 48"><path d="M24 13 C18 9 10 9 6 11 V37 C10 35 18 35 24 39 C30 35 38 35 42 37 V11 C38 9 30 9 24 13Z" fill="#fff" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 13 V39 M11 18 H19 M11 24 H19 M29 18 H37 M29 24 H37" stroke="#3b2a1a" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-blocks" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><rect x="5" y="26" width="17" height="17" rx="3" fill="#FF8FAB"/><rect x="26" y="26" width="17" height="17" rx="3" fill="#8ED1FC"/><rect x="15.5" y="6" width="17" height="17" rx="3" fill="#FFD93B" transform="rotate(8 24 14)"/></g><circle cx="13.5" cy="34.5" r="2.5" fill="#fff"/><path d="M31 31 L38 38 M38 31 L31 38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-chef" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" fill="#fff"><path d="M14 30 C5 30 5 17 14 18 C13 9 24 6 26 13 C30 6 43 11 36 20 C43 22 41 31 34 30 Z"/><rect x="14" y="30" width="20" height="10" rx="2"/></g><path d="M20 30 V25 M28 30 V25" stroke="#3b2a1a" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-mosque" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 41 V27 C10 19 24 13 24 13 C24 13 38 19 38 27 V41Z" fill="#fff"/><path d="M20 41 V33 a4 4 0 0 1 8 0 V41" fill="#7ED9A9"/><path d="M5 41 H43 M24 13 V7"/></g><path d="M26.5 4.5 a3 3 0 1 0 0 5 a3.6 3.6 0 1 1 0 -5z" fill="#FFD93B" stroke="#3b2a1a" stroke-width="1.5"/></symbol>
+    <symbol id="i-music" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M18 34 V12 L38 7 V29"/><path d="M18 18 L38 13"/></g><g stroke="#3b2a1a" stroke-width="2.5"><ellipse cx="13" cy="34" rx="6" ry="4.5" fill="#C9B6FF"/><ellipse cx="33" cy="29" rx="6" ry="4.5" fill="#C9B6FF"/></g></symbol>
+    <symbol id="i-bus" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><rect x="5" y="11" width="38" height="24" rx="7" fill="#FFD93B"/><rect x="10" y="16" width="10" height="8" rx="2" fill="#E2F4FF"/><rect x="24" y="16" width="14" height="8" rx="2" fill="#E2F4FF"/><circle cx="15" cy="36" r="4.5" fill="#fff"/><circle cx="33" cy="36" r="4.5" fill="#fff"/></g></symbol>
+    <symbol id="i-sprout" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 42 V22 M13 42 H35" fill="none"/><path d="M24 27 C24 17 14 12 7 14 C7 23 15 27 24 27Z" fill="#7ED9A9"/><path d="M24 22 C24 12 34 7 41 9 C41 18 33 22 24 22Z" fill="#9BE3C3"/></g></symbol>
+    <symbol id="i-bulb" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 5 C15 5 10 12 10 19 C10 25 16 28 17 34 H31 C32 28 38 25 38 19 C38 12 33 5 24 5Z" fill="#FFD93B"/><path d="M18 38 H30 M20 42 H28 M19 18 a5 5 0 0 1 5 -5" fill="none"/></g></symbol>
+    <symbol id="i-butterfly" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 17 C18 4 3 8 7 20 C9 26 18 26 24 24Z" fill="#C9B6FF"/><path d="M24 17 C30 4 45 8 41 20 C39 26 30 26 24 24Z" fill="#C9B6FF"/><path d="M24 24 C17 26 9 31 13 38 C17 43 22 36 24 30Z" fill="#FF8FAB"/><path d="M24 24 C31 26 39 31 35 38 C31 43 26 36 24 30Z" fill="#FF8FAB"/><path d="M24 14 V36 M24 14 L20 7 M24 14 L28 7" fill="none"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="26" r="16" fill="#fff"/><path d="M24 17 V26 L30 30 M10 10 L6 14 M38 10 L42 14" fill="none"/></g></symbol>
+    <symbol id="i-apple" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 16 C18 10 8 13 9 24 C10 34 16 42 24 39 C32 42 38 34 39 24 C40 13 30 10 24 16Z" fill="#FF8FAB"/><path d="M24 16 C24 11 26 8 29 6" fill="none"/><path d="M26 11 C30 7 35 9 35 9 C33 14 28 14 26 11Z" fill="#7ED9A9"/></g><ellipse cx="16" cy="22" rx="2.5" ry="4" fill="#fff" opacity=".8"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 34 C14 30 14 26 14 20 C14 14 18 10 24 10 C30 10 34 14 34 20 C34 26 34 30 36 34Z" fill="#FFD93B"/><path d="M9 34 H39 M24 5 V10" fill="none"/><circle cx="24" cy="39" r="3" fill="#3b2a1a"/></g></symbol>
+    <symbol id="i-house" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 20 V41 H36 V20 L24 9Z" fill="#fff"/><rect x="20" y="29" width="8" height="12" rx="2" fill="#FFB86B"/><path d="M7 23 L24 7 L41 23" fill="none"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><circle cx="24" cy="24" r="9" fill="#FFD93B"/><path d="M24 4 V9 M24 39 V44 M4 24 H9 M39 24 H44 M10 10 L13.5 13.5 M34.5 34.5 L38 38 M38 10 L34.5 13.5 M13.5 34.5 L10 38" fill="none"/></g></symbol>
+    <symbol id="i-kids" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><path d="M4 42 C4 31 26 31 26 42Z" fill="#FF8FAB"/><path d="M22 42 C22 31 44 31 44 42Z" fill="#8ED1FC"/><circle cx="15" cy="19" r="8" fill="#FFE6EE"/><circle cx="33" cy="19" r="8" fill="#E2F4FF"/></g><circle cx="12.5" cy="19" r="1.3" fill="#3b2a1a"/><circle cx="17.5" cy="19" r="1.3" fill="#3b2a1a"/><circle cx="30.5" cy="19" r="1.3" fill="#3b2a1a"/><circle cx="35.5" cy="19" r="1.3" fill="#3b2a1a"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M38 20 A15 15 0 0 0 11 16"/><path d="M10 28 A15 15 0 0 0 37 32"/><path d="M10 8 V17 H19"/><path d="M38 40 V31 H29"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><path d="M24 44 C24 44 10 30 10 20 A14 14 0 0 1 38 20 C38 30 24 44 24 44Z" fill="#FF8FAB"/><circle cx="24" cy="20" r="5" fill="#fff"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6 C13 6 6 13 6 22 C6 27 8 31 11 34 L9 42 L17 39 C19 40 21 40 24 40 C35 40 42 32 42 22 C42 13 35 6 24 6Z" fill="#fff"/><path d="M16 20 H32 M16 27 H26" fill="none"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="13" y="4" width="22" height="40" rx="6" fill="#fff"/><rect x="17" y="10" width="14" height="22" rx="2" fill="#8ED1FC"/><path d="M21 38 H27" fill="none"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><circle cx="24" cy="24" r="19" fill="#FF8FAB"/><path d="M19 15 L34 24 L19 33Z" fill="#fff"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><path d="M16 14 L19 8 H29 L32 14" fill="#fff"/><rect x="5" y="14" width="38" height="26" rx="7" fill="#FF8FAB"/><circle cx="24" cy="27" r="7.5" fill="#fff"/></g><circle cx="36" cy="20" r="2" fill="#fff"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M12 22 V32 C12 37 36 37 36 32 V22" fill="#7ED9A9"/><path d="M4 18 L24 9 L44 18 L24 27Z" fill="#3b2a1a"/><path d="M40 20 V31" fill="none"/><circle cx="40" cy="33" r="2.5" fill="#FFD93B"/></g></symbol>
+    <symbol id="i-gift" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="21" width="32" height="20" rx="3" fill="#FF8FAB"/><rect x="5" y="14" width="38" height="8" rx="2" fill="#FFD93B"/><path d="M24 14 V41 M24 14 C18 5 10 9 15 14 M24 14 C30 5 38 9 33 14" fill="none"/></g></symbol>
+    <symbol id="i-note" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="9" y="6" width="30" height="36" rx="5" fill="#fff"/><rect x="17" y="3" width="14" height="7" rx="2" fill="#7ED9A9"/><path d="M15 18 L18 21 L23 15 M26 18 H33 M15 30 L18 33 L23 27 M26 30 H33" fill="none"/></g></symbol>
+    <symbol id="i-insta" viewBox="0 0 48 48"><defs><linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FFD93B"/><stop offset=".5" stop-color="#FF8FAB"/><stop offset="1" stop-color="#C9B6FF"/></linearGradient></defs><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"><rect x="6" y="6" width="36" height="36" rx="11" fill="url(#igGrad)"/><circle cx="24" cy="24" r="8" fill="#fff"/></g><circle cx="34.5" cy="13.5" r="2.5" fill="#3b2a1a"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="11" fill="#8ED1FC" stroke="#3b2a1a" stroke-width="2.5"/><path d="M27 42 V27 H32 L33 21 H27 V17.5 C27 15.8 27.8 15 29.5 15 H33 V9.6 C31.8 9.4 30 9.2 28.3 9.2 C23.7 9.2 21 12 21 16.8 V21 H16 V27 H21 V42" fill="#fff" stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-party" viewBox="0 0 48 48"><g stroke="#3b2a1a" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M6 42 L16 14 L34 32Z" fill="#FFD93B"/><path d="M11 28 L20 37 M14 20 L27 33 M28 8 C30 12 26 14 29 18 M38 14 C35 16 37 20 41 19 M34 4 L35 7 M42 26 L44 27" fill="none"/></g><circle cx="23" cy="13" r="2" fill="#FF8FAB"/><circle cx="37" cy="24" r="2" fill="#8ED1FC"/></symbol>
+  </svg>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="nav" id="nav">
+    <a href="#beranda" class="nav-brand">
+      <img src="assets/logo.jpeg" alt="Logo RA Asy Syahidah">
+      <span>RA Asy Syahidah</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#tentang">Tentang</a>
+      <a href="#visi-misi">Visi Misi</a>
+      <a href="#program">Program</a>
+      <a href="#guru">Guru</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#video">Video</a>
+      <a href="#daftar">SPMB</a>
+      <a href="https://wa.me/6281298312386?text=Assalamu'alaikum%20Bu%20Intan%2C%20saya%20ingin%20daftar%20di%20RA%20Asy%20Syahidah" target="_blank" rel="noopener" class="btn btn-sm"><svg class="ic"><use href="#i-chat"/></svg> Daftar via WA</a>
+    </nav>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="beranda">
+    <div class="dots"></div>
+    <svg class="cloud c1"><use href="#cloud"/></svg>
+    <svg class="cloud c2"><use href="#cloud"/></svg>
+    <svg class="cloud c3"><use href="#cloud"/></svg>
+    <svg class="fly-bee b1"><use href="#bee"/></svg>
+    <svg class="fly-bee b2"><use href="#bee"/></svg>
+    <svg class="deco star s1" style="fill:#fff"><use href="#star"/></svg>
+    <svg class="deco star s2" style="fill:#FF8FAB"><use href="#star"/></svg>
+    <svg class="deco heart h1" style="fill:#FF8FAB"><use href="#heart"/></svg>
+
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <span class="pill"><svg class="ic bee-ic"><use href="#bee"/></svg> Assalamu'alaikum, Sahabat Syabee!</span>
+        <h1>
+          <span class="h1-top">Raudhatul Athfal</span>
+          <span class="bouncy">Asy Syahidah</span>
+        </h1>
+        <p>Tempat si kecil belajar, bermain, dan tumbuh ceria seperti lebah kecil yang rajin. Belajar akhlak Islami, mandiri, dan berani tampil bersama <b>Syabee</b>!</p>
+        <div class="hero-cta">
+          <a href="https://wa.me/6281298312386?text=Assalamu'alaikum%20Bu%20Intan%2C%20saya%20ingin%20daftar%20di%20RA%20Asy%20Syahidah" target="_blank" rel="noopener" class="btn jelly"><svg class="ic"><use href="#i-chat"/></svg> Daftar Sekarang</a>
+          <a href="#galeri" class="btn btn-pink jelly"><svg class="ic"><use href="#i-camera"/></svg> Lihat Keseruan</a>
+        </div>
+        <div class="hero-stats">
+          <div class="st-yellow"><b>30+</b><span>Angkatan Lulus</span></div>
+          <div class="st-sky"><b>12</b><span>Murid / Kelas</span></div>
+          <div class="st-mint"><b>∞</b><span>Senyum Ceria</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="mascot">
+          <div class="bubble" id="bubble">Halo teman-teman!</div>
+          <svg class="mascot-bee"><use href="#bee"/></svg>
+        </div>
+        <div class="hero-photos">
+          <figure class="hphoto big" style="--c:#fff"><img src="assets/foto/manasik-haji-3.jpg" alt="Anak-anak RA Asy Syahidah manasik haji di depan replika Ka'bah"></figure>
+          <figure class="hphoto" style="--c:#FF8FAB"><img src="assets/foto/mus.jpeg" alt="Foto ceria anak-anak bersama ibu guru" style="object-position:50% 30%"></figure>
+          <figure class="hphoto" style="--c:#8ED1FC"><img src="assets/foto/market-day-1.jpg" alt="Cooking and Market Day RA Asy Syahidah"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <svg class="drip" viewBox="0 0 1440 115" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V28H1349 C1349 60 1351 108 1334 108 C1317 108 1319 60 1319 28H1263 C1263 44.8 1265 70 1249 70 C1233 70 1235 44.8 1235 28H1139 C1139 42.8 1141 65 1117 65 C1093 65 1095 42.8 1095 28H981 C981 41.6 983 62 965 62 C947 62 949 41.6 949 28H888 C888 61.2 890 111 868 111 C847 111 849 61.2 849 28H791 C791 44.4 793 69 774 69 C756 69 758 44.4 758 28H638 C638 42.8 640 65 618 65 C597 65 599 42.8 599 28H477 C477 51.2 479 86 462 86 C446 86 448 51.2 448 28H318 C318 42.8 320 65 296 65 C272 65 274 42.8 274 28H151 C151 60 153 108 129 108 C105 108 107 60 107 28H51 C51 42 53 63 34 63 C16 63 18 42 18 28H0Z"/></svg>
+
+  <!-- ====== TENTANG ====== -->
+  <section class="section about" id="tentang">
+    <svg class="deco flower f1" style="fill:#FF8FAB"><use href="#flower"/></svg>
+    <svg class="deco star s3" style="fill:#8ED1FC"><use href="#star"/></svg>
+    <svg class="deco heart h5" style="fill:#C9B6FF"><use href="#heart"/></svg>
+    <svg class="deco flower f4" style="fill:#7ED9A9"><use href="#flower"/></svg>
+    <svg class="bee-trail" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150 C80 40 160 190 250 110 S 400 20 470 90 S 560 120 600 40" fill="none" stroke="#3b2a1a" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/></svg>
+    <svg class="trail-bee"><use href="#bee"/></svg>
+
+    <div class="container about-grid">
+      <div class="about-photos reveal">
+        <div class="blob"></div>
+        <figure class="polaroid ap-main"><img src="assets/foto/hari-nasional-7.jpg" alt="Guru dan murid di Hari Batik"><figcaption>Hari Batik seru!</figcaption></figure>
+        <figure class="polaroid ap-small"><img src="assets/foto/guru-1.jpg" alt="Para guru RA Asy Syahidah"><figcaption>Bunda-bunda kami</figcaption></figure>
+        <div class="sticker"><svg class="sticker-heart"><use href="#heart"/></svg><span>Sayang<br>Anak</span></div>
+        <div class="doodle-note">ini kami!<svg viewBox="0 0 60 40"><path d="M5 8 C25 4 40 14 48 30 M48 30 L38 27 M48 30 L50 20" fill="none" stroke="#3b2a1a" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow"><svg class="ic bee-ic"><use href="#bee"/></svg> Kenalan Yuk!</span>
+        <h2>Sarang Belajar yang <span class="squiggle">Hangat &amp; Islami</span></h2>
+        <p>RA Asy Syahidah adalah Raudhatul Athfal (TK Islam) yang sudah meluluskan lebih dari 29 angkatan. Di sini anak-anak mengenal Al-Qur'an, adab, dan ibadah sehari-hari dengan cara yang seru.</p>
+        <p>Seperti lebah yang rajin bekerja sama di sarangnya, kami percaya setiap anak punya keistimewaan yang tumbuh lewat bermain, berkreasi, dan kebersamaan.</p>
+        <ul class="values">
+          <li class="v-yellow"><span class="v-ic"><svg><use href="#i-mosque"/></svg></span>Rajin ibadah &amp; berakhlak mulia</li>
+          <li class="v-sky"><span class="v-ic"><svg><use href="#i-blocks"/></svg></span>Belajar lewat bermain</li>
+          <li class="v-pink"><span class="v-ic"><svg><use href="#i-bulb"/></svg></span>Kreatif &amp; percaya diri</li>
+          <li class="v-mint"><span class="v-ic"><svg><use href="#i-kids"/></svg></span>Dekat dengan orang tua</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== VISI MISI ====== -->
+  <section class="section visimisi scallop" id="visi-misi">
+    <svg class="deco star s7" style="fill:#FFD93B"><use href="#star"/></svg>
+    <svg class="deco heart h4" style="fill:#FF8FAB"><use href="#heart"/></svg>
+    <svg class="deco flower f5" style="fill:#8ED1FC"><use href="#flower"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic bee-ic"><use href="#bee"/></svg> Visi &amp; Misi</span>
+        <h2>Cita-cita <span class="squiggle">Sarang Kami</span></h2>
+      </div>
+      <div class="visi-box reveal">
+        <svg class="visi-bee"><use href="#bee"/></svg>
+        <span class="visi-label"><svg class="ic" style="fill:#FFD93B"><use href="#star"/></svg> VISI <svg class="ic" style="fill:#FFD93B"><use href="#star"/></svg></span>
+        <p class="visi-text">“Bersama Kami Membina Akhlak, Ilmu dan Kreatifitas”</p>
+      </div>
+      <div class="misi-grid">
+        <div class="misi reveal" style="--c:#7ED9A9;--bg:#E3F8EE"><b>1</b><span class="misi-ic"><svg><use href="#i-sprout"/></svg></span><p>Menanamkan nilai-nilai akhlak mulia sejak dini.</p></div>
+        <div class="misi reveal" style="--c:#FFD93B;--bg:#FFF6CC"><b>2</b><span class="misi-ic"><svg><use href="#i-bulb"/></svg></span><p>Mengembangkan potensi anak melalui pembelajaran yang menyenangkan.</p></div>
+        <div class="misi reveal" style="--c:#8ED1FC;--bg:#E2F4FF"><b>3</b><span class="misi-ic"><svg><use href="#i-book"/></svg></span><p>Meningkatkan kemampuan ilmu dan keterampilan dasar anak.</p></div>
+        <div class="misi reveal" style="--c:#C9B6FF;--bg:#F0EAFF"><b>4</b><span class="misi-ic"><svg><use href="#i-butterfly"/></svg></span><p>Menumbuhkan kreativitas dan kemandirian anak sesuai dengan tahap perkembangannya.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROGRAM ====== -->
+  <section class="section program scallop" id="program">
+    <svg class="deco heart h2" style="fill:#FFD93B"><use href="#heart"/></svg>
+    <svg class="deco star s4" style="fill:#C9B6FF"><use href="#star"/></svg>
+    <svg class="cloud c6"><use href="#cloud"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic bee-ic"><use href="#bee"/></svg> Program Kami</span>
+        <h2>Hari-hari Penuh <span class="squiggle">Petualangan</span></h2>
+        <p>Setiap kegiatan dirancang supaya anak belajar sambil tertawa~</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal" style="--c:#FFD93B;--bg:#FFF6CC"><div class="card-icon"><svg><use href="#i-book"/></svg></div><h3>Hubbul Qur'an</h3><p>Mengenal huruf hijaiyah, hafalan surat pendek, dan doa sehari-hari.</p></article>
+        <article class="card reveal" style="--c:#8ED1FC;--bg:#E2F4FF"><div class="card-icon"><svg><use href="#i-blocks"/></svg></div><h3>Sentra Balok</h3><p>Membangun menara, rumah, dan kota impian sambil melatih logika.</p></article>
+        <article class="card reveal" style="--c:#FF8FAB;--bg:#FFE6EE"><div class="card-icon"><svg><use href="#i-chef"/></svg></div><h3>Cooking and Market Day</h3><p>Chef cilik memasak bersama, lalu belajar jualan hasil karyanya sendiri.</p></article>
+        <article class="card reveal" style="--c:#7ED9A9;--bg:#E3F8EE"><div class="card-icon"><svg><use href="#i-mosque"/></svg></div><h3>Manasik &amp; Ibadah</h3><p>Latihan manasik haji, shalat dhuha, dan sholat I'd berjama'ah bersama teman-teman.</p></article>
+        <article class="card reveal" style="--c:#C9B6FF;--bg:#F0EAFF"><div class="card-icon"><svg><use href="#i-music"/></svg></div><h3>Pentas Seni</h3><p>Tampil di panggung, menari, bernyanyi, dan fashion show.</p></article>
+        <article class="card reveal" style="--c:#FFB86B;--bg:#FFEFDD"><div class="card-icon"><svg><use href="#i-bus"/></svg></div><h3>Fun Trip</h3><p>Jalan-jalan edukatif ke taman bermain dan tempat seru lainnya.</p></article>
+      </div>
+
+      <div class="highlights reveal">
+        <div style="--c:#FFF6CC"><svg><use href="#i-loop"/></svg><b>Metode Sentra</b><small>Moving Class</small></div>
+        <div style="--c:#E3F8EE"><svg><use href="#i-book"/></svg><b>Al-Qur'an / Tahsin</b><small>Metode UMMI</small></div>
+        <div style="--c:#FFE6EE"><svg><use href="#i-kids"/></svg><b>Maks. 12 Murid</b><small>per kelas</small></div>
+        <div style="--c:#E2F4FF"><svg><use href="#i-clock"/></svg><b>Fun Learning</b><small>07.30 – 11.30 WIB</small></div>
+      </div>
+
+      <div class="schedule reveal">
+        <h3><svg class="ic ic-lg"><use href="#i-clock"/></svg> Sehari di Sarang Syabee</h3>
+        <ol class="timeline">
+          <li style="--c:#7ED9A9"><span class="t-ic"><svg><use href="#i-mosque"/></svg></span><b>Tahsin</b><time>07.30 – 08.30</time></li>
+          <li style="--c:#8ED1FC"><span class="t-ic"><svg><use href="#i-book"/></svg></span><b>Reading Time</b><time>08.30 – 09.00</time></li>
+          <li style="--c:#C9B6FF"><span class="t-ic"><svg><use href="#i-sun"/></svg></span><b>Dhuha Time</b><time>09.00 – 09.15</time></li>
+          <li style="--c:#FFB86B"><span class="t-ic"><svg><use href="#i-apple"/></svg></span><b>Break to Eat</b><time>09.15 – 09.45</time></li>
+          <li style="--c:#FF8FAB"><span class="t-ic"><svg><use href="#i-bell"/></svg></span><b>Transisi Time</b><time>09.45 – 10.00</time></li>
+          <li style="--c:#FFD93B"><span class="t-ic"><svg><use href="#i-blocks"/></svg></span><b>Sentra Time</b><time>10.00 – 11.15</time></li>
+          <li style="--c:#7ED9A9"><span class="t-ic"><svg><use href="#i-house"/></svg></span><b>Time to Go</b><time>11.15 – 11.30</time></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GURU ====== -->
+  <section class="section guru scallop" id="guru">
+    <svg class="deco star s10" style="fill:#FFD93B"><use href="#star"/></svg>
+    <svg class="deco heart h7" style="fill:#FF8FAB"><use href="#heart"/></svg>
+    <svg class="deco flower f7" style="fill:#C9B6FF"><use href="#flower"/></svg>
+    <svg class="deco star s11" style="fill:#8ED1FC"><use href="#star"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic"><use href="#i-kids"/></svg> Dewan Guru</span>
+        <h2>Kenalan Sama <span class="squiggle">Bu Guru Syahidah Yuk!</span></h2>
+        <p>Para pendidik penyayang yang mendampingi tumbuh kembang anak setiap hari.</p>
+      </div>
+
+      <!--
+        ============ CARA ISI KARTU GURU ============
+        - Foto guru ada di folder  assets/guru/  (contoh: assets/guru/deliana.jpg)
+        - Nama + gelar ada di <h3>, jabatan ada di <p class="guru-role">
+        - Kepala sekolah ada di blok "guru-lead" (paling atas, foto lebih besar)
+        - Mau tambah guru? Copy satu blok <article class="guru-card"> ... </article>
+          di dalam "guru-grid", lalu tempel di bawahnya.
+        ============================================
+      -->
+
+      <!-- Kepala Sekolah -->
+      <div class="guru-lead">
+        <article class="guru-card guru-card--lead reveal">
+          <svg class="guru-crown" viewBox="0 0 60 40" aria-hidden="true"><path d="M6 34 L4 10 L18 22 L30 4 L42 22 L56 10 L54 34 Z" fill="#FFD93B" stroke="#3b2a1a" stroke-width="3" stroke-linejoin="round"/><circle cx="30" cy="20" r="4" fill="#FF8FAB" stroke="#3b2a1a" stroke-width="2"/></svg>
+          <div class="guru-photo"><img src="assets/guru/intan-yuliani.jpg" alt="Foto Ibu Intan Yuliani" loading="lazy"></div>
+          <h3>Intan Yuliani, S.Pd.I</h3>
+          <p class="guru-role">Kepala Sekolah</p>
+        </article>
+      </div>
+
+      <div class="guru-tree" aria-hidden="true"></div>
+
+      <!-- Guru-guru -->
+      <div class="guru-grid">
+        <article class="guru-card reveal" style="--c:#FF8FAB">
+          <div class="guru-photo"><img src="assets/guru/deliana.jpg" alt="Foto Ibu Deliana" loading="lazy"></div>
+          <h3>Deliana</h3>
+          <p class="guru-role">Guru KB</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#8ED1FC">
+          <div class="guru-photo"><img src="assets/guru/hikmawati.jpg" alt="Foto Ibu Hikmawati" loading="lazy"></div>
+          <h3>Hikmawati, S.Pd</h3>
+          <p class="guru-role">Guru TK A dan TK B</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#7ED9A9">
+          <div class="guru-photo"><img src="assets/guru/ismawati.jpg" alt="Foto Ibu Ismawati" loading="lazy"></div>
+          <h3>Ismawati, S.Pd.I</h3>
+          <p class="guru-role">Guru TK B</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#C9B6FF">
+          <div class="guru-photo"><img src="assets/guru/misda-yuliatin.jpg" alt="Foto Ibu Misda Yuliatin" loading="lazy"></div>
+          <h3>Misda Yuliatin</h3>
+          <p class="guru-role">Guru TK A</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#FFB86B">
+          <div class="guru-photo"><img src="assets/guru/titin-syarah.jpg" alt="Foto Ibu Titin Syarah" loading="lazy"></div>
+          <h3>Titin Syarah, S.Pd.I</h3>
+          <p class="guru-role">Guru TK B</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#FFD93B">
+          <div class="guru-photo"><img src="assets/guru/nuhaisih.jpg" alt="Foto Ibu Nuhaisih" loading="lazy"></div>
+          <h3>Nuhaisih, S.Pd.I</h3>
+          <p class="guru-role">Guru TK B</p>
+        </article>
+        <article class="guru-card reveal" style="--c:#FF8FAB">
+          <div class="guru-photo"><img src="assets/guru/nazwa.jpg" alt="Foto Ibu Nazwa" loading="lazy"></div>
+          <h3>Kak Nazwa</h3>
+          <p class="guru-role">Pendamping KB</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALERI ====== -->
+  <section class="section gallery" id="galeri">
+    <svg class="deco flower f2" style="fill:#8ED1FC"><use href="#flower"/></svg>
+    <svg class="deco star s5" style="fill:#FFD93B"><use href="#star"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic"><use href="#i-camera"/></svg> Galeri Kegiatan</span>
+        <h2>Momen <span class="squiggle">Seru</span> Syabee Kids</h2>
+        <p>Klik fotonya buat lihat lebih besar ya!</p>
+      </div>
+      <div class="filters reveal" id="filters"></div>
+      <div class="masonry" id="gallery"></div>
+      <div class="more-wrap" hidden><button class="btn jelly" id="moreBtn" hidden>Lihat Lebih Banyak</button></div>
+    </div>
+  </section>
+
+  <!-- ====== VIDEO ====== -->
+  <section class="section videos scallop" id="video">
+    <svg class="cloud c4"><use href="#cloud"/></svg>
+    <svg class="cloud c5"><use href="#cloud"/></svg>
+    <svg class="deco star s8" style="fill:#FFD93B"><use href="#star"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic"><use href="#i-play"/></svg> Video</span>
+        <h2>Tonton <span class="squiggle">Keceriaan</span> Kami</h2>
+      </div>
+      <div class="video-grid">
+        <figure class="vcard reveal" style="--c:#FF8FAB"><video src="assets/video/17-agustus.mp4#t=0.6" controls preload="metadata" playsinline></video><figcaption>Semarak 17 Agustus</figcaption></figure>
+        <figure class="vcard reveal" style="--c:#7ED9A9"><video src="assets/video/ibadah.mp4#t=0.6" controls preload="metadata" playsinline></video><figcaption>Belajar Ibadah</figcaption></figure>
+        <figure class="vcard reveal" style="--c:#C9B6FF"><video src="assets/video/bersalaman.mp4#t=0.6" controls preload="metadata" playsinline></video><figcaption>Saling Bersalaman</figcaption></figure>
+        <figure class="vcard reveal" style="--c:#FFB86B"><video src="assets/video/kegiatan-kelas.mp4#t=0.6" controls preload="metadata" playsinline></video><figcaption>Kegiatan di Kelas</figcaption></figure>
+        <figure class="vcard reveal" style="--c:#FFD93B"><video src="assets/video/aku-pandai-bercerita.mp4#t=1" controls preload="metadata" playsinline></video><figcaption>Aku Pandai Bercerita</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WISUDA ====== -->
+  <section class="section wisuda" id="wisuda">
+    <div class="confetti-bg"></div>
+    <svg class="deco star s9" style="fill:#FFD93B"><use href="#star"/></svg>
+    <svg class="deco heart h6" style="fill:#FF8FAB"><use href="#heart"/></svg>
+    <div class="container wisuda-grid">
+      <div class="wisuda-text reveal">
+        <span class="eyebrow"><svg class="ic"><use href="#i-cap"/></svg> Akhirussanah</span>
+        <h2>Lulus Jadi <span class="squiggle">Lebah Hebat!</span></h2>
+        <p>Setiap tahun kami melepas lebah-lebah kecil yang siap terbang ke jenjang berikutnya. Bangga sekali melihat mereka tumbuh percaya diri!</p>
+        <div class="poster-row">
+          <figure class="polaroid" data-lightbox data-src="assets/foto/poster-akhirussanah.jpg"><img src="assets/foto/poster-akhirussanah.jpg" alt="Banner Hubbul Qur'an dan Akhirussanah"><figcaption>Hubbul Qur'an</figcaption></figure>
+          <figure class="polaroid" data-lightbox data-src="assets/foto/pentas-seni-1.jpg"><img src="assets/foto/pentas-seni-1.jpg" alt="Pentas seni akhirussanah angkatan 29"><figcaption>Pentas Seni</figcaption></figure>
+        </div>
+      </div>
+      <div class="grad-strip reveal">
+        <div class="grad" style="--c:#FFD93B"><img src="assets/foto/wisuda-6.png" alt="Wisudawati cilik"></div>
+        <div class="grad photo" style="--c:#8ED1FC"><img src="assets/foto/wisuda-alumni.jpg" alt="Wisudawati cilik"></div>
+        <div class="grad" style="--c:#FF8FAB"><img src="assets/foto/wisuda-8.png" alt="Wisudawan cilik"></div>
+        <div class="grad" style="--c:#C9B6FF"><img src="assets/foto/wisuda-9.png" alt="Wisudawati cilik"></div>
+        <div class="grad" style="--c:#7ED9A9"><img src="assets/foto/wisuda-7.png" alt="Wisudawan cilik"></div>
+        <div class="grad" style="--c:#FFB86B"><img src="assets/foto/wisuda-10.png" alt="Wisudawan cilik"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HARI SPESIAL ====== -->
+  <section class="section posters scallop">
+    <svg class="deco heart h3" style="fill:#FF8FAB"><use href="#heart"/></svg>
+    <svg class="deco flower f6" style="fill:#FFD93B"><use href="#flower"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic"><use href="#i-party"/></svg> Hari Spesial</span>
+        <h2>Kami Rayakan <span class="squiggle">Bersama</span></h2>
+        <p>Geser ke samping untuk lihat semua ya~</p>
+      </div>
+      <div class="poster-scroll reveal">
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-hari-pahlawan.jpg"><img src="assets/foto/poster-hari-pahlawan.jpg" alt="Poster Hari Pahlawan 10 November 2026"><figcaption>Hari Pahlawan</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-hari-ayah.jpg"><img src="assets/foto/poster-hari-ayah.jpg" alt="Poster Hari Ayah Nasional"><figcaption>Hari Ayah</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-ramadan.jpg"><img src="assets/foto/poster-ramadan.jpg" alt="Poster Marhaban Ya Ramadan"><figcaption>Ramadan</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-tahun-baru-islam.jpg"><img src="assets/foto/poster-tahun-baru-islam.jpg" alt="Poster Tahun Baru Islam"><figcaption>Tahun Baru Islam</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-hari-batik.jpg"><img src="assets/foto/poster-hari-batik.jpg" alt="Poster Hari Batik"><figcaption>Hari Batik</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-17-agustus.png"><img src="assets/foto/poster-17-agustus.png" alt="Poster 17 Agustus"><figcaption>17 Agustus</figcaption></figure>
+        <figure class="polaroid" data-lightbox data-src="assets/foto/poster-munaqosyah.jpg"><img src="assets/foto/poster-munaqosyah.jpg" alt="Poster Dokumentasi Munaqosyah RA Asy Syahidah"><figcaption>Munaqosyah</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SPMB / DAFTAR ====== -->
+  <section class="section cta" id="daftar">
+    <svg class="deco flower f3" style="fill:#C9B6FF"><use href="#flower"/></svg>
+    <svg class="deco star s6" style="fill:#FFD93B"><use href="#star"/></svg>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><svg class="ic bee-ic"><use href="#bee"/></svg> SPMB 2027/2028</span>
+        <h2>Sistem Penerimaan <span class="squiggle">Murid Baru</span></h2>
+        <p>Tahun Pelajaran 2027/2028 sudah dibuka! Yuk tonton videonya dulu~</p>
+      </div>
+
+      <div class="spmb-grid">
+        <figure class="vcard spmb-video reveal" style="--c:#FFD93B">
+          <video src="assets/video/info-spmb-2027-2028.mp4#t=0.6" controls preload="metadata" playsinline></video>
+          <figcaption>Info SPMB RA Asy Syahidah</figcaption>
+        </figure>
+
+        <div class="spmb-info">
+          <div class="spmb-card reveal" style="--c:#E3F8EE">
+            <h3><svg class="ic ic-lg"><use href="#i-note"/></svg> Syarat Pendaftaran</h3>
+            <ul class="checks">
+              <li>Membayar biaya masuk</li>
+              <li>Mengisi formulir pendaftaran</li>
+              <li>Menyerahkan fotokopi Akte Kelahiran &amp; Kartu Keluarga</li>
+              <li>Pembayaran bisa cash atau angsuran bertahap</li>
+            </ul>
+          </div>
+
+          <div class="fee-grid">
+            <div class="fee reveal" style="--c:#FFE6EE">
+              <span class="fee-tag">KB</span>
+              <ul>
+                <li><span>SPP / bulan</span><b>Rp180.000</b></li>
+                <li><span>Seragam 3 stel</span><b>Rp520.000</b></li>
+                <li><span>Perlengkapan &amp; modul / tahun</span><b>Rp500.000</b></li>
+                <li><span>Sumbangan sarana</span><b>Rp500.000</b></li>
+                <li><span>Kas komite / tahun</span><b>Rp500.000</b></li>
+              </ul>
+              <div class="fee-total">Rp2.200.000</div>
+            </div>
+            <div class="fee reveal" style="--c:#E2F4FF">
+              <span class="fee-tag">TK A &amp; B</span>
+              <ul>
+                <li><span>SPP / bulan</span><b>Rp330.000</b></li>
+                <li><span>Seragam 5 stel</span><b>Rp875.000</b></li>
+                <li><span>Perlengkapan &amp; modul / tahun</span><b>Rp805.000</b></li>
+                <li><span>Sumbangan sarana</span><b>Rp500.000</b></li>
+                <li><span>Kas komite / tahun</span><b>Rp500.000</b></li>
+              </ul>
+              <div class="fee-total">Rp3.010.000</div>
+            </div>
+          </div>
+          <p class="fee-note reveal"><svg class="ic ic-lg"><use href="#i-gift"/></svg><span>Adik/kakak kandung alumni RA Asy Syahidah dapat potongan <b>50% sumbangan sarana</b>. Uang pangkal bisa dicicil mulai Januari 2027 &amp; dilunasi paling lambat 10 Mei 2027.</span></p>
+        </div>
+      </div>
+
+      <div class="cta-box reveal">
+        <div class="cta-mascot">
+          <svg class="cta-bee"><use href="#bee"/></svg>
+          <div class="bubble small">Ayo main bareng aku!</div>
+        </div>
+        <h2>Yuk, Gabung Jadi Keluarga Syabee!</h2>
+        <p>Tanya-tanya dulu juga boleh banget. Langsung chat Bunda kami ya</p>
+        <div class="cta-actions">
+          <a class="btn btn-mint jelly" href="https://wa.me/6281298312386?text=Assalamu'alaikum%20Bu%20Intan%2C%20saya%20ingin%20info%20SPMB%20RA%20Asy%20Syahidah" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg> Bu Intan</a>
+          <a class="btn btn-white jelly" href="https://wa.me/6281218136831?text=Assalamu'alaikum%20Bu%20Deliana%2C%20saya%20ingin%20info%20SPMB%20RA%20Asy%20Syahidah" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg> Bu Deliana</a>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <a class="info info-link reveal" style="--c:#FFE6EE" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Bahagia%20XI%20No.28B%2C%20Kreo%20Selatan%2C%20Larangan%2C%20Kota%20Tangerang%2015156" target="_blank" rel="noopener"><span class="info-ic"><svg><use href="#i-pin"/></svg></span><h4>Alamat</h4><p>Jl. Bahagia XI RT 004/RW 04 No.28B, Kreo Selatan, Larangan, Kota Tangerang 15156</p><span class="info-cta">Buka di Maps →</span></a>
+        <a class="info info-link reveal" style="--c:#E3F8EE" href="https://www.instagram.com/ra_asysyahidah/" target="_blank" rel="noopener"><span class="info-ic"><svg><use href="#i-insta"/></svg></span><h4>Instagram</h4><p>@ra_asysyahidah</p><span class="info-cta">Kunjungi IG kami →</span></a>
+        <a class="info info-link reveal" style="--c:#E2F4FF" href="https://www.facebook.com/ra.asy.syahidah" target="_blank" rel="noopener"><span class="info-ic"><svg><use href="#i-fb"/></svg></span><h4>Facebook</h4><p>RA Asy Syahidah</p><span class="info-cta">Kunjungi FB kami →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="grass" aria-hidden="true">
+      <svg style="fill:#FF8FAB;left:6%"><use href="#flower"/></svg>
+      <svg style="fill:#FFD93B;left:18%;--s:.7"><use href="#flower"/></svg>
+      <svg style="fill:#8ED1FC;left:34%;--s:.85"><use href="#flower"/></svg>
+      <svg style="fill:#C9B6FF;left:62%"><use href="#flower"/></svg>
+      <svg style="fill:#FF8FAB;left:78%;--s:.75"><use href="#flower"/></svg>
+      <svg style="fill:#FFD93B;left:90%;--s:.9"><use href="#flower"/></svg>
+    </div>
+    <div class="footer-inner">
+      <img src="assets/logo.jpeg" alt="Logo RA Asy Syahidah">
+      <p><b>Raudhatul Athfal Asy Syahidah</b><br>Belajar • Bermain • Berakhlak</p>
+      <small>© <span id="year"></span> RA Asy Syahidah · Dibuat oleh: @dhianufaah</small>
+    </div>
+  </footer>
+
+  <!-- ====== LIGHTBOX ====== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Tutup">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Sebelumnya">‹</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Berikutnya">›</button>
+  </div>
+
+  <!-- ====== LAYAR PEMBUKA: klik Masuk = musik nyala ====== -->
+  <div class="splash" id="splash">
+    <div class="splash-card">
+      <svg class="splash-bee"><use href="#bee"/></svg>
+      <img src="assets/logo.jpeg" alt="Logo RA Asy Syahidah" class="splash-logo">
+      <h2>Selamat Datang di<br><span>RA Asy Syahidah</span></h2>
+      <p>Yuk main bareng Syabee!</p>
+      <button class="btn btn-yellow splash-go" id="splashGo">Masuk</button>
+    </div>
+  </div>
+
+  <!-- ====== MUSIK LATAR ====== -->
+  <audio id="bgm" src="assets/audio/taman.mp4" loop preload="auto"></audio>
+  <button class="music-btn" id="musicBtn" aria-label="Putar / hentikan musik" title="Musik">
+    <svg viewBox="0 0 48 48" fill="none" stroke="#3b2a1a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M8 19 H15 L25 10 V38 L15 29 H8 Z" fill="#fff"/>
+      <g class="spk-wave"><path d="M31 18 Q35 24 31 30"/><path d="M36 13 Q43 24 36 35"/></g>
+      <g class="spk-x"><path d="M32 19 L41 29"/><path d="M41 19 L32 29"/></g>
+    </svg>
+    <span class="mb-bars"><i></i><i></i><i></i></span>
+    <span class="mb-hint">Ketuk untuk musik</span>
+  </button>
+
+  <a href="#beranda" class="to-top" id="toTop" aria-label="Kembali ke atas"><svg><use href="#bee"/></svg></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
